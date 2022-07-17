@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>dreLearn - Panel</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/index.css">
+        <script src="https://kit.fontawesome.com/bc89b66626.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    </head>
+    <body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          Launch demo modal
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+<div class="container-fluid" style="margin: 10px 10px;">
+    <section id="header" style="background-color: white;">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <h1 id="title">dreLearn</h1>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav" style="margin-left: auto;">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#widget">DASHBOARD</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#blog">BLOG</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#statistic">STATISTIC</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa-solid fa-user"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Settings</a></li>
+                      <li><a class="dropdown-item" href="#">Log out</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </section>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+    <section id="widget">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="box">
+              <div class="container">
+                <div class="row">
+                    <div class="col">
+                      <div class="column">
+                        <div class="col-1">
+                          <h4>Homework</h4>
+                        </div>
+                        <div class="col" id="homework">
+<div class="vertical carousel slide" data-ride="carousel" data-bs-ride="carousel" id="homeworks">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="col">
+<h4>Science</h4>
+<p>17 July 2022 12:30PM</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="col">
+        <h4>Math</h4>
+        <p>17 July 2022 12:30PM</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="col">
+        <h4>Science</h4>
+        <p>17 July 2022 12:30PM</p>
+      </div>
+    </div>
+  </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+            </div>
+            <div class="col-2" style="margin-top: auto; margin-bottom: auto;">
+              <i class="fa-solid fa-plus" style="margin: 5px;"></i>
+              <i class="fa-solid fa-check" style="margin: 5px;"></i>
+            </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          <div class="col-md-4">
+            <div class="box">
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <h4>Learning</h4>
+                    <div class="column">
+                      <div class="col">
+                        <h1>1 Hour</h1>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <i class="fas fa-caret-up" style="font-size: 35px;"></i>
+                    <p>25%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="box">
+              <div class="container">
+                <h4>Update</h3>
+                  <h1>not available ^_^</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+</div>
+    </section>
+    <section id="blog" style="margin: 10px 15px;">
+      <div class="container">
+        <h1>Blog Post</h1>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="img/Screenshot 2022-07-15 at 23.49.04.png" style="height: 250px; width: 250px;   margin-left: auto; margin-right: auto;" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Effective decision-making based on data analysis</h5>
+                    <p>Data analysis and technology can make decision within milliseconds, which increased the efficiency.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="img/guard-watching-video-on-monitor.jpg" style="height: 250px; width: 250px;   margin-left: auto; margin-right: auto;" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Creation of safer communities</h5>
+                    <p>The technology, AI, can be used to create a safer community, how? AI can decide whether a message is harmful or not quick, yet can be helpful to lower the risk from malicious attack. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="img/sav-ur-money.svg" style="height: 250px;" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Optimization of time, energy, money.</h5>
+                    <p>With the help of data analysis, we can track our wasted time, energy, and money and with the help of technology we can find a way to cut down on those cost with efficiency. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="statistic" style="margin: 10px 15px;">
+      <div class="container">
+        <h1>Statistic</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Student</h5>
+                  <p class="card-text">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <h6>Total</h6>
+                        <p>100</p>
+                      </div>
+                      <div class="col-lg-6">
+                        <h6>Active</h6>
+                        <p>100</p>
+                      </div>
+                    </div>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Teacher</h5>
+                  <p class="card-text">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <h6>Total</h6>
+                        <p>100</p>
+                      </div>
+                      <div class="col-lg-6">
+                        <h6>Active</h6>
+                        <p>100</p>
+                      </div>
+                    </div>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </section>
+    </div>
+</div>
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("header");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= 80) {
+    navbar.classList.add("fixed-top")
+  } else {
+    navbar.classList.remove("fixed-top");
+  }
+}
+
+
+
+
+  $(document).ready(function(){
+    $('#myCarousel').carousel({
+      interval:6000
+    });
+$('#homeworks').bind('mousewheel DOMMouseScroll', function(e){
+
+        if(e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0) {
+            $(this).carousel('prev');
+			
+			
+        }
+        else{
+            $(this).carousel('next');
+			
+        }
+    });
+ 	$("#homeworks").on("touchstart", function(event){
+ 
+        var yClick = event.originalEvent.touches[0].pageY;
+    	$(this).one("touchmove", function(event){
+
+        var yMove = event.originalEvent.touches[0].pageY;
+        if( Math.floor(yClick - yMove) > 1 ){
+            $(".carousel").carousel('next');
+        }
+        else if( Math.floor(yClick - yMove) < -1 ){
+            $(".carousel").carousel('prev');
+        }
+    });
+    $(".carousel").on("touchend", function(){
+            $(this).off("touchmove");
+    });
+});
+});
+</script>
+
+
+
+        
+        <script src="" async defer></script>
+    </body>
+</html>

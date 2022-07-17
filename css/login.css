@@ -1,0 +1,49 @@
+.box {
+    margin-top: 45%;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 14px;
+    overflow: visible;
+    background: #ffffff;
+    box-shadow:  30px 30px 62px #d9d9d9,
+                 -30px -30px 62px #ffffff;
+                 
+}
+
+#title {
+    text-align: left;
+    font-family: 'Comfortaa', cursive;
+}
+
+ a {
+    text-decoration: none;
+    color: #000000;
+ }
+
+ a:visited {
+    text-decoration: none;
+    color: #000000;
+ }
+
+ a:link {
+    text-decoration: none;
+    color: #000000;
+ }
+
+ .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(158, 217, 234, 0.5);
+  }
+
+  .notes:hover .overlay {
+    opacity: 1;
+  }
