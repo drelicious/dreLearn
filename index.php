@@ -391,7 +391,7 @@ echo "       <div class='carousel-item'>
       </div>
 </div>
 </div>
-
+</div>
 
 <!-- Modal menu for add homework-->
 <div class="modal fade" id="addHomeWork" tabindex="-1" role="dialog" aria-labelledby="addHomeWork" aria-hidden="true">
