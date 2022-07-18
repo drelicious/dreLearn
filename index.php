@@ -326,7 +326,7 @@ header("Location: index.php");
               </div>
             </div>
 <?php
-$sql4 = "SELECT * FROM notes";
+$sql4 = "SELECT * FROM notes WHERE email = '$email'";
 $result4 = mysqli_query($conn, $sql4);
 if (mysqli_num_rows($result4) > 0) {
   while($row = mysqli_fetch_assoc($result4)) {
